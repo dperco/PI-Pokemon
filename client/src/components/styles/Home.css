@@ -1,0 +1,100 @@
+.body{
+    margin: 0;
+    background-color: rgb(170, 219, 35);
+    background-size: cover;
+    /* background-image: url('./img/fondoColor.jpg'); */
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+
+
+.div{
+     
+    background-color: rgb(63, 134, 197);
+    align-items: center;
+    text-align: center;
+   
+}
+
+.Card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 30px;
+    padding: 5px;
+    justify-content: center;
+    max-width: 80%;
+}
+
+h3{
+    color: white;
+    background-color: rgb(162, 201, 247);
+    width: 200px;
+    text-align:center;
+    margin-left: 600px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+select{
+    background-color: rgb(224, 171, 207);
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 150px;
+    align-items: center;
+    
+}
+
+button{
+    background-color: rgb(48, 235, 11);
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.sp{
+    
+    text-align:center;
+}
+link{
+    background-color: azure;
+    vertical-align: text-bottom;
+}
+.target{
+    align-items: center;
+    vertical-align:top;
+}
+
+.nova{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.det{
+    background-color: rgb(182, 165, 165);
+}
+
+.h1{
+    text-align: center;
+    color: blueviolet;
+    margin-right: 250px;
+}
+
+.search{
+    align-items: center;
+    margin-right: 250px;
+    margin-bottom: 20px;
+}
+
+.recarga{
+    margin-right: 350px;
+}
+
+.Paginado{
+    margin-right: 300px;
+}
+
+.inicio{
+    margin-right: 300px;
+}
