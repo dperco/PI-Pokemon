@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useDispatch,useSelector} from 'react-redux';
-import {getDetail} from '../actions';
+import {getDetail,clearDetail} from '../actions';
 import { useEffect } from 'react';
 //import Card from './Card';
 import './styles/Detail.css';
@@ -10,11 +10,38 @@ export default function Detail(props){
     
     const dispatch = useDispatch();
 
+   
+
     useEffect(()=>{
-      
-         dispatch(getDetail(props.match.params.id))
-       
-    },[dispatch,props.match.params.id]);
+        dispatch(clearDetail());
+        dispatch(getDetail(props.match.params.id));
+        // return () => {
+        //     window.removeEventListener("resize", )
+        //   }
+
+        // return function cleanup() {
+        //     getDetail();
+        // }
+        
+        // dispatch(()=>{
+        //     console.log('reseteo');
+        // },[]);
+        
+
+        }
+    ,[dispatch,props.match.params.id]);
+
+    //let [reset,setReset]=useState();
+
+    // function handleClick(e){   //resetea POKEMON
+        
+    //     dispatch(getPokemon())
+    //      };
+
+    // useEffect(() =>{
+    //     dispatch(getDetail())
+    //   },[])
+
 
     const filtrado=useSelector((state)=> state.detail);
 
@@ -49,7 +76,18 @@ export default function Detail(props){
                     
             
            
-           <Link to='/home' ><button>volver</button></Link>      
+           <Link to='/home' >
+               
+                   
+                       
+                   
+                   
+                   <button >volver</button>
+           
+           
+           
+           
+           </Link>      
         </div>
         
       

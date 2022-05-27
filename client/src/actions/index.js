@@ -120,5 +120,11 @@ export function getForm() {        //para agregar al formulario
             payload: json.data
 })}};
 
+export function clearDetail(){
+    return {
+        type : 'CLEAR_DETAIL',
+    }
+};
+
 
 

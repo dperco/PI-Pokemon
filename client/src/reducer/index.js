@@ -4,7 +4,8 @@ const inicioState={
     pokemon:[],
     allpokemon:[],
     types:[],
-    detail:{}
+    detail:{},
+    cleardetail:[]
 }
 
 function rootReducer (state=inicioState,action) {
@@ -24,6 +25,12 @@ function rootReducer (state=inicioState,action) {
                 pokemon: action.payload
 
             };
+
+            case 'CLEAR_DETAIL':
+                return {
+                    ...state,
+                    cleardetail: []
+                };
 
         case 'FILTER_CREATED':          //filtra por Pokemon Creados o no 
        // let  allpok2=state.pokemon;
